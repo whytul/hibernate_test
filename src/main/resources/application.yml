@@ -1,0 +1,10 @@
+Spring:
+  profiles:
+    active: local
+#
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/templates/
+#      suffix: .html
+
+#Spring.mvc.view.prefix=/WEB-INF/templates/

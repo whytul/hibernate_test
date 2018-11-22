@@ -1,0 +1,17 @@
+spring:
+  profiles: local
+  datasource:
+    platform: h2
+    url: jdbc:log4jdbc:h2:tcp://localhost:9092/mem:testdb;MVCC=TRUE
+    username: sa
+    password: ""
+    driverClassName: org.h2.Driver
+#    driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    database-platform: H2
+    hibernate:
+      ddl-auto: create-drop
